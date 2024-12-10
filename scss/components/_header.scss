@@ -1,0 +1,20 @@
+header{
+    height: 100%;
+    width: 100%;
+    border: solid black;
+    background-color: darkcyan;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 80px;
+        height:80px ;
+
+    }
+    h1{
+        font-size: 60px;
+        color: black
+
+    }
+}

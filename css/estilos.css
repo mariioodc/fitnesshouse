@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  border: solid black;
+  background-color: darkcyan;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 80px;
+  height: 80px;
+}
+header h1 {
+  font-size: 60px;
+  color: black;
+}
+
+.hero {
+  height: 400px;
+  background-image: url(../img/banner3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero align-items:center h2 {
+  color: darkcyan;
+  font-size: 40px;
+}
+.hero p {
+  color: darkcyan;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.hero a {
+  font-size: 25px;
+  background-color: black;
+  color: darkcyan;
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid darkcyan;
+}
+.hero a:hover {
+  background-color: darkcyan;
+  color: black;
+  border: 2px solid black;
+}
+
+.saludable {
+  background-image: url(../img/saludable-bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.saludable div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.saludable div h2 {
+  color: rgb(12, 4, 50);
+  font-size: 40px;
+}
+.saludable img {
+  width: 380px;
+  height: 500px;
+  border: 2px solid grey;
+}
+
+.productos h2 {
+  text-align: center;
+  background-color: darkcyan;
+}
+.productos .productos-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productos .productos-contenedor div {
+  background-color: darkcyan;
+  box-shadow: 13px 10px 23px 5px rgb(0, 0, 0);
+  -webkit-box-shadow: 13px 10px 23px 5px rgb(0, 0, 0);
+  -moz-box-shadow: 13px 10px 23px 5px rgb(0, 0, 0);
+  width: 218px;
+  height: 250px;
+  text-align: center;
+  margin: 5px;
+}
+.productos .productos-contenedor div img {
+  width: 180px;
+  height: 150px;
+}
+.productos .productos-contenedor div h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.productos .productos-contenedor div a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+.productos .productos-contenedor div a:hover {
+  background-color: darkcyan;
+  color: black;
+  border: 2px solid black;
+}
+
+footer {
+  background-color: darkcyan;
+  margin-top: 30px;
+}
+footer h2 {
+  font-size: 25px;
+  align-items: center;
+}
+footer div {
+  text-align: center;
+}
+footer div img {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 865px) {
+  .saludable {
+    flex-direction: column;
+  }
+  .saludable img {
+    display: none;
+  }
+  .saludable p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  header {
+    flex-direction: column;
+  }
+  .grid-conteiner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-items {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header nav ul li a {
+    font-size: 12px;
+  }
+  .hero {
+    height: 200px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 8px;
+  }
+  .hero a {
+    font-size: 12px;
+  }
+  .saludable div h2 {
+    font-size: 20px;
+  }
+  .saludable div p {
+    font-size: 8px;
+  }
+  .productos h2 {
+    font-size: 12px;
+  }
+  .grid-conteiner {
+    grid-template-columns: 1fr;
+  }
+  .grid-items {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
